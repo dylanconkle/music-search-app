@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,22 @@
         <title>Music Search App</title>
     </head>
     <body>
-        <header>
-        <h1 class="heading-title">Welcome To Musearch!</h1>
-        </header>
+        <div class="search-container">
+            <header>
+                <h1 class="header-text">Welcome To Musearch!</h1>
+            </header>
+            <section class="search-type">
+                <form>
+                    <input type="radio" name="searchSelection" value="song">Song
+                    <input type="radio" name="searchSelection" value="artist">Artist
+                    <input type="radio" name="searchSelection" value="genre">Genre
+                </form>
+            </section>
+            <section class="search-bar">
+                <input class="search-text-input" type="text" placeholder="Search for Song, Title, or Artist">
+                <button type="submit">Search</button>
+            </section>
+        </div>
+        <footer></footer>
     </body>
 </html>
