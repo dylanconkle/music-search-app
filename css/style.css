@@ -1,11 +1,9 @@
 body{
-  background-image: url("../img/IX7PKCRKDK.jpg") no-repeat center center fixed;
+  background: url(../img/IX7PKCRKDK.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/IX7PKCRKDK.jpg', sizingMethod='scale');
--ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/IX7PKCRKDK.jpg', sizingMethod='scale')";
 }
 .header-text{
     text-align: center;
@@ -52,9 +50,4 @@ body{
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-}
-@media only screen and (orientation: landscape) {
-    body {
-        background-color: lightblue;
-    }
 }
