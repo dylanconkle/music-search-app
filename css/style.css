@@ -1,21 +1,43 @@
 body{
-  background: url(../img/IX7PKCRKDK.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: #313B74;
 }
 .header-text{
+    margin-top: 15%;
     text-align: center;
+    color: #94A2EC;
 }
+.search-type,
 .search-bar{
-    margin-left: 40%;
+    margin-left: 30%;
 }
 .search-text-input{
     width: 50%;
 }
 .search-type{
-    margin-left: 40%;
+  overflow: hidden;
+  color: #94A2EC;
+}
+.centerDiv {
+ /* Must manually set width/height */
+ width:1920px;
+ height:1080px;
+
+ /* The magic centering code */
+ margin:auto;
+ position:absolute;
+ top:0;bottom:0; /* Aligns Vertically - Remove for Horizontal Only */
+ left:0;right:0; /* Aligns Horizontally - Remove for Vertical Only  */
+
+ /* Prevent div from overflowing main window */
+ max-width:100%;
+ max-height:100%;
+ overflow:auto;
+}
+
+/* IE 7 and Below */
+:first-child+html .absoluteCenter,
+* html .absoluteCenter {
+ /* Place code here to override all above values, and add IE friendly centering */
 }
 /* For mobile phones: */
 [class*="col-"] {
