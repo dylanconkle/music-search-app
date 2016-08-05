@@ -8,19 +8,17 @@ body{
 }
 .search-type,
 .search-bar{
-    margin-left: 30%;
+    margin-left: 1%;
 }
-.search-text-input{
-    width: 50%;
-}
+
 .search-type{
   overflow: hidden;
   color: #94A2EC;
 }
 .centerDiv {
  /* Must manually set width/height */
- width:1920px;
- height:1080px;
+ width:960px;
+ height:480px;
 
  /* The magic centering code */
  margin:auto;
