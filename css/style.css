@@ -1,6 +1,9 @@
 body{
   background-color: #313B74;
 }
+.table-white{
+  background-color: white; 
+}
 .header-text{
     margin-top: 15%;
     text-align: center;
