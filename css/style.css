@@ -2,21 +2,16 @@ body{
   background-color: #313B74;
 }
 .table-white{
-  background-color: white; 
+  background-color: white;
 }
 .header-text{
     margin-top: 15%;
     text-align: center;
     color: #94A2EC;
 }
-.search-type,
 .search-bar{
     margin-left: 1%;
-}
-
-.search-type{
-  overflow: hidden;
-  color: #94A2EC;
+    display: inline-block;
 }
 .centerDiv {
  /* Must manually set width/height */

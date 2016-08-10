@@ -3,8 +3,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
         <script src="js/results.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,19 +15,12 @@
             <header>
                 <h1 class="header-text">Welcome To Musearch!</h1>
             </header>
-            <section class="search-type">
-                <form>
-                    <input id="query1" class="search-selection" type="radio" name="searchSelection" value="song">Song
-                    <input id="query2" class="search-selection" type="radio" name="searchSelection" value="artist">Artist
-                    <input id="query3" class="search-selection" type="radio" name="searchSelection" value="genre">Genre
-                </form>
-            </section>
-              <form id="search-form" class="search-bar input-group">
-                  <input id="query" type="text" class="form-control"/>
-                  <div class="btn-secondary">
-                      <input class="btn btn-secondary" type="submit" value="Search" id="submit" />
-                  </div>
+            <div id="search-form" class="search-bar input-group">
+              <input id="query" type="text" class="form-control"/>
+              <form class="input-group-btn">
+                  <button class="btn btn-secondary" type="submit" id="submit">Go!</button>
               </form>
+            </div>
         </div>
         <footer></footer>
     </body>
