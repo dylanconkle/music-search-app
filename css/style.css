@@ -9,7 +9,7 @@ body{
     text-align: center;
     color: #94A2EC;
 }
-.results{
+.results-table{
   max-height: 480px;
   overflow: auto;
 }
