@@ -9,6 +9,10 @@ body{
     text-align: center;
     color: #94A2EC;
 }
+
+.results{
+  margin-top: 10px;
+}
 .results-table{
   max-height: 480px;
   overflow: auto;
