@@ -13,6 +13,21 @@ $(document).ready(function() {
               $("#spotify-tab").hide();
               $("#spotify-results").removeClass("active");
             });
+            $(document).keypress(function(e) {
+              if(e.which == 13) {
+                event.preventDefault();
+                var userInput = $("#query").val();
+                if (userInput == 0) {
+                    alert('Please type a search term!');
+                } else {
+                    spotifyApiCall(userInput);
+                    youtubeApiCall(userInput);
+                    $("#spotify").show();
+                    $("#youtube").hide();
+                    $("#youtube-tab").hide();
+                };
+              }
+            });
             $("#search-form").submit(function(event) {
                 event.preventDefault();
                 var userInput = $("#query").val();
