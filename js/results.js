@@ -5,6 +5,8 @@ $(document).ready(function() {
               $("#spotify-tab").show();
               $("#youtube").hide();
               $("#youtube-tab").hide();
+              $("#youtube-results").removeClass("active");
+              $("#spotify-results").addClass("active");
             });
             $("#youtube-results").on("click", function(){
               $("#youtube").show();
@@ -12,6 +14,7 @@ $(document).ready(function() {
               $("#spotify").hide();
               $("#spotify-tab").hide();
               $("#spotify-results").removeClass("active");
+              $("#youtube-results").addClass("active");
             });
             $(document).keypress(function(e) {
               if(e.which == 13) {
