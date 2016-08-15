@@ -54,7 +54,7 @@ $(document).ready(function() {
                     function(receivedApiData) {
                         console.log(receivedApiData);
                         if (receivedApiData.tracks.total == 0) {
-                            alert("Not found!");
+                            alert("No Results for Spotify!");
                         } else {
                             displaySpotifyResults(receivedApiData.tracks.items);
                         }
@@ -72,7 +72,7 @@ $(document).ready(function() {
                     function(receivedApiData) {
                         console.log(receivedApiData);
                         if (receivedApiData.pageInfo.totalResults == 0) {
-                            alert("Not found!");
+                            alert("No results for YouTube!");
                         } else {
                             displayYoutubeResults(receivedApiData.items);
                         }
@@ -91,7 +91,7 @@ $(document).ready(function() {
                 html += "<td>" + "<a href='http://open.spotify.com/track/"+ tracksArrayValue.id + "'target='_blank'>" + "Play" + "</href>" + "</td>";
                 html += "</tr>";
               });
-              $("#results table #spotify").html(html);
+              $("#results table #spotify").html(html).fadeIn("slow");
             }
             function displayYoutubeResults(videosArray) {
               var html = "";
@@ -104,6 +104,6 @@ $(document).ready(function() {
                 html += "<td>" + "<a href='https://www.youtube.com/watch?v="+ videosArrayValue.id.videoId + "'target='_blank'>" + "Play" + "</href>" + "</td>";
                 html += "</tr>";
               });
-              $("#results table #youtube").html(html);
+              $("#results table #youtube").html(html).fadeIn("slow");
             }
 });

@@ -8,10 +8,15 @@ body{
     margin-top: 5px;
     text-align: center;
     color: #94A2EC;
+    font-family: 'Fjalla One', sans-serif;
+    text-shadow: 1px 1px;
 }
-
+.input-group{
+  font-family: 'Roboto', sans-serif;
+}
 .results{
   margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
 }
 .results-table{
   max-height: 480px;
