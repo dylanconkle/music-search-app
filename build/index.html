@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Fjalla+One|Roboto' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="build/music-search-app.1.0.0.min.css">
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="build/music-search-app.1.0.0.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Music Search App</title>
+    </head>
+    <body>
+        <div class="container centerDiv">
+            <header>
+                <h1 class="header-text">Welcome To Musearch!</h1>
+            </header>
+            <div id="search-form" class="input-group">
+              <input id="query" type="text" class="form-control" placeholder="Search Song, Artist, or Genre"/>
+              <span class="input-group-btn">
+                  <button class="go btn btn-secondary" type="submit" id="submit">Go!</button>
+              </span>
+            </div>
+            <div class="results" id="results">
+              <ul class="nav nav-tabs">
+                <li class="active" role="presentation" id="spotify-results"><a href="#">Spotify</a></li>
+                <li role="presentation" id="youtube-results"><a href="#">Youtube</a></li>
+              </ul>
+              <div class="results-table">
+              <table class="table table-hover table-white">
+                <thead id="spotify-tab">
+                  <tr>
+                    <th>#</th>
+                    <th>Track</th>
+                    <th>Artist</th>
+                    <th>Play</th>
+                  </tr>
+                </thead>
+                <thead id="youtube-tab">
+                  <tr>
+                    <th>#</th>
+                    <th>Video Title</th>
+                    <th>YouTube Channel</th>
+                    <th>Play</th>
+                  </tr>
+                </thead>
+              <tbody id="spotify">
+              </tbody>
+              <tbody id="youtube">
+              </tbody>
+              </table>
+            </div>
+            </div>
+          </div>
+        <footer class="footer-text"></footer>
+    </body>
+</html>
