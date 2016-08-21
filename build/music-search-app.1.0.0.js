@@ -45,7 +45,7 @@
 /***/ function(module, exports) {
 
 	"use strict";
-	
+
 	$(document).ready(function () {
 	    $("#results").hide();
 	    $("#spotify-results").on("click", function () {
@@ -92,7 +92,7 @@
 	            $("#youtube-tab").hide();
 	        };
 	    });
-	
+
 	    function spotifyApiCall(userSearchTerm) {
 	        $.getJSON("https://api.spotify.com/v1/search", {
 	            q: userSearchTerm,
@@ -107,7 +107,7 @@
 	            }
 	        });
 	    }
-	
+
 	    function youtubeApiCall(userSearchTerm) {
 	        $.getJSON("https://www.googleapis.com/youtube/v3/search", {
 	            part: "snippet",
@@ -124,7 +124,7 @@
 	            }
 	        });
 	    }
-	
+
 	    function displaySpotifyResults(tracksArray) {
 	        $("#results").show();
 	        var html = "";
